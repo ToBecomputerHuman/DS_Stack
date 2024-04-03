@@ -32,6 +32,14 @@ public class ArrList<E> {
      */
     private void resize(int newSize) {
         // TODO resize 함수를 완성하시오.
+        /**
+         * 했는데 사라져서 다시했슴 뭐지
+         */
+        E[] temp = (E[]) new Object[newSize];
+        for (int i = 0; i < size; i++) {
+            temp[i] = a[i];
+        }
+        a = temp;
     }
 
     public E deleteLast() {
